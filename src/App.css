@@ -1,0 +1,234 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+body{
+  background-color: #07938c;
+  color: white;
+}
+.button1{
+  width: 100px;
+  height: 50px;
+  background-color: black;
+  border: 3px solid #07938c;
+  border-radius: 10px;
+  color: white;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+.button2{
+  width: 100px;
+  height: 50px;
+  background-color: black;
+  border: 3px solid #07938c;
+  border-radius: 10px;
+  color: white;
+}
+.button3{
+  width: 100px;
+  height: 50px;
+  background-color: black;
+  border: 3px solid #07938c;
+  border-radius: 10px;
+  color: white;
+  margin: 5px;
+  margin-left: 1220px;
+  
+}
+
+/* Warning message centered at the top */
+.warning-wrapper {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+}
+
+.warning-box {
+  background-color: #ffcc00;
+  color: #333;
+  padding: 15px 25px;
+  border-radius: 10px;
+  max-width: 600px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.warning-text {
+  margin: 0;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.visual{
+  margin-top: 25px;
+  margin-left: 5px;
+}
+
+.feed{
+  width: 450px;
+  height: 300px;
+  background-color: black;
+  border: 3px solid #07938c;
+  border-radius: 10px;
+  color: white;
+}
+
+.text_on_feed{
+  color: white;
+  font-size: 40px;
+  justify-content: center;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  margin-top: 130px;
+}
+
+.stat_box{
+  margin-top: 30px;
+  margin-left: 5px;
+}
+
+.gps_box{
+  width: 250px;
+  height: 180px;
+  background-color: rgb(16, 61, 29);
+  border: 3px solid #07938c;
+  border-radius: 10px;
+  color: rgb(0, 0, 0);
+}
+
+.text_on_stat{
+  color: white;
+  font-size: 20px;
+  justify-content: center;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  margin-top: 10px;
+}
+.gps_text{
+  color: white;
+  font-size: 20px;
+  justify-content: center;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  margin-top: 10px;
+}
+
+.mode-button {
+  width: 130px;
+  height: 50px;
+  background-color: rgb(240, 17, 17);
+  border: 3px solid #07938c;
+  border-radius: 10px;
+  color: white;
+  font-size: 12px;
+  cursor: pointer;
+  margin-top: 40px;
+  margin-left: 20px;
+}
+
+.stage-area {
+  position: absolute;
+  top: 150px; /* adjust based on header */
+  right: 20px;
+  padding: 20px;  
+  border-radius: 10px;
+  text-align: center;
+  margin-right: 2px;
+}
+
+.stage-title {
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  text-align: center;
+  justify-content: center;
+}
+
+.stage-box {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: center;
+}
+
+.stage-button {
+  background: linear-gradient(90deg, #ff3e3e, #ffa33e);
+  border: none;
+  border-radius: 30px;
+  color: white;
+  font-weight: bold;
+  padding: 12px 0;
+  font-size: 14px;
+  cursor: pointer;
+  width: 180px;
+  transition: transform 0.2s ease, background 0.3s ease;
+  justify-content: center
+
+}
+
+/* Completed stages */
+.stage-button.completed {
+  background-color: #00cc66; /* Green */
+  color: white;
+}
+
+/* Current stage */
+.stage-button.active {
+  background-color: #ffcc00; /* Yellow */
+  color: black;
+  animation: pulse 1.5s infinite;
+}
+
+/* Optional animation for active stage */
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 204, 0, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(255, 204, 0, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 204, 0, 0);
+  }
+}
